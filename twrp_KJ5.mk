@@ -5,6 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+#Inherit from those products. Most specifics first
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
