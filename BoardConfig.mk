@@ -112,3 +112,9 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
+
+# Custom Version
+TW_DEVICE_VERSION : = Compiled by KZ
+
+# No Recovery Partition
+TW_HAS_NO_RECOVERY_PARTITION := true
