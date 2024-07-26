@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/TECNO-KJ5
+DEVICE_PATH := device/tecno/KJ5
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -28,20 +28,20 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := cortex-a55
+TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := TECNO-KJ5
+TARGET_BOOTLOADER_BOARD_NAME := KJ5
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -118,3 +118,6 @@ TW_DEVICE_VERSION : = Compiled by KZ
 
 # No Recovery Partition
 TW_HAS_NO_RECOVERY_PARTITION := true
+
+# Storage
+RECOVERY_SDCARD_ON_DATA := true
